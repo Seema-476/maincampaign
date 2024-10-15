@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'thincccboi';
+    src: url("/assets/font/THICCCBOI-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'thincccboi';
+    src: url("/assets/font/THICCCBOI-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'thincccboi';
+    src: url("/assets/font/THICCCBOI-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'thincccboi';
+    src: url("/assets/font/THICCCBOI-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'thincccboi';
+    src: url("/assets/font/THICCCBOI-SemiBold.ttf");
+    font-weight: 600;
+}
+body{
+    font-family: "thincccboi",sans-serif;
+}
+
+/* tab-1 */
+.tab-1.active {
+    font-size: 22px;
+    color: white;
+    background-color: #3B5998;
+    border: 0;
+    padding: 20px 25px;
+    height: 62px;
+}
+
+.content::before {
+    background: linear-gradient(259.08deg, #50EDFF -5.05%, #48B8DA 63.97%, #3B5998 130.42%);
+}
+
+.content.active {
+    display: block;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* tab-2 */
+.text::before {
+    background: linear-gradient(259.08deg, #50EDFF -5.05%, #48B8DA 63.97%, #3B5998 130.42%);
+}
+
+.tab-2:hover {
+    font-size: 22px;
+    color: white;
+    background-color: #3B5998;
+    border: 0;
+    padding: 16px 25px;
+}
+
+/* slider 1 */
+.responsive .slick-track {
+    display: flex;
+    gap: 20px;
+    padding: 0 0 35px;
+}
+
+.slick-dots li button:before {
+    color: #FAF9F6;
+    opacity: 1;
+    font-size: 9px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #3B5998;
+}
+
+.responsive .slick-next:before {
+    display: none !important;
+    content: "" !important;
+}
+
+.responsive .slick-prev:before {
+    display: none !important;
+    content: "" !important;
+}
+
+.footer-slider .slick-track {
+    padding: 0 0 24px;
+}
+
+.footer-slider .slick-slide div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.footer-slider .slick-slide .slick-current .slick-active {
+    width: 150px !important;
+}
+
+/* down to up btn */
+.topbtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(min-width:576px) {
+    .responsive .slick-track {
+        gap: 30px;
+        padding: 0 0 52px;
+    }
+
+    .footer-slider .slick-track {
+        padding: 0 0 40px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 15px;
+    }
+}
+
+@media(min-width:992px) {
+    .responsive.slick-track {
+        gap: 55px;
+        padding: 0 0 52px;
+    }
+
+    .footer-slider .slick-track {
+        padding: 0 0 72px;
+    }
+}
